@@ -23,6 +23,9 @@ DISCOVER_URL = 'https://www.discovery.com/sponsored/hgtv-smart-home/'
 #### ENTER YOUR LIST OF EMAILS HERE ####
 EMAILS = []
 
+
+# ----------------------------- DO NOT EDIT BELOW THIS LINE ------------------------------------ #
+
 for email in EMAILS:
     try:
         driver.get(HGTV_URL)
