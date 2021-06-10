@@ -29,7 +29,6 @@ for email in EMAILS:
         enter_button = driver.find_element_by_xpath('/html/body/div[1]/div/main/section/div/div/div/div/div/div[1]/div/div[2]/form[2]/div[2]/div/button')
         enter_button.click()
         print("You were successfully entered!")
-        driver.quit()
 
     except selenium.common.exceptions.ElementNotInteractableException:
         print("Already entered today, moving on to next email")
@@ -48,6 +47,8 @@ for email in EMAILS:
         enter_button = driver.find_element_by_xpath('/html/body/div[1]/div/main/section/div/div/div/div/div/div[1]/div/div[2]/form[2]/div[2]/div/button')
         enter_button.click()
         print("You were successfully entered!")
-        driver.quit()
+        
     except selenium.common.exceptions.ElementNotInteractableException:
         print("Already entered today, moving on to next email")
+        
+driver.quit()
