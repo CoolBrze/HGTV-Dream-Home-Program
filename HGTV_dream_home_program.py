@@ -4,6 +4,15 @@ from selenium.webdriver.common.keys import Keys
 import time
 
 
+"""
+For this program to work, you need to have already gone to both the HGTV and Discover websites to manually fill out the information that will be associated with your email (name, 
+address, DOB, etc). After you have manually submitted your first entry, you can utilize this program for subsequent entries each day.
+
+"""
+
+
+
+
 ### ENTER YOUR CHROME DRIVER PATH HERE ###
 chrome_driver_path = 
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
